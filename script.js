@@ -1,3 +1,7 @@
+function randomColor() {
+    return Math.random()*255;
+}
+
 const grid = document.querySelector('#grid');
 
 // Create the grid
@@ -17,7 +21,7 @@ for (let i = 0; i < 16; i++) {
 // Apply mouseover effects
 const cells = document.querySelectorAll('.cell');
 cells.forEach(cell => cell.addEventListener('mouseover', function() {
-    cell.style.backgroundColor = 'red';
+    cell.style.backgroundColor = 'rgb(' + randomColor() + ',' + randomColor() + ',' + randomColor() + ')';
 }));
 cells.forEach(cell => cell.addEventListener('mouseout', function() {
     setTimeout(function () {
