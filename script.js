@@ -52,5 +52,5 @@ function setButtonClickEffect() {
     });
 }
 
-initializeGrid(16);
+initializeGrid(30);
 setButtonClickEffect();
